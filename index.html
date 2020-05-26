@@ -25,11 +25,13 @@
     <body class="body">
         <audio autoplay controls id="bgMusic">
             <source src="https://levulinh.github.io/kun-project/bg_music.mp3" type="audio/mpeg" />
+            
         </audio>
-
+        <p id="demo"></p>
         <script>
             function myFunction() {
               var x = document.getElementById("bgMusic").autoplay;
+              document.getElementById("demo").innerHTML = x;
             }
             </script>
         <div class="phu"></div>
