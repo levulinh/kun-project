@@ -29,23 +29,22 @@
     </head>
     <body class="body">
         <script>
-            alert("This is a test message");
+            alert("Click chạy nhạc ở góc phải duới màn hình em nhoé :*");
         </script>
-        <audio id="myAudio" autoplay>
-            <source src="https://levulinh.github.io/kun-project/bg_music.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
-          
-          <p id="demo"></p>
-          
-          <script>
-          function myFunction() {
-            var x = document.getElementById("myAudio").autoplay;
-            document.getElementById("demo").innerHTML = x;
-          }
-          var player = document.getElementById("myAudio");
-          player.play();
-          </script>
+        <div  style="position: fixed; bottom: 10px; right: 10px; z-index: 1000;">
+            <audio id="myAudio" controls autoplay>
+                <source src="https://levulinh.github.io/kun-project/bg_music.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+        </div>
+
+        <script>
+            window.addEventListener('load', function () {
+                alert('loaded')
+                document.getElementById("myAudio").play();
+            });   
+        </script>
+        
 
         <div class="phu"></div>
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation" data-anijs="if: mouseover, do: bounceIn animated" style="background-color: #f99ec7 !important;box-shadow: 0 0 2px 0 #acacac;">
@@ -544,7 +543,7 @@
         <div class="heart " rel="like" style=" height:130px;
             width:130px;">
             <p id="pClick" style="text-align: center;font-size: 10px;margin-bottom: 0px;
-                margin-top: 85px;font-family: 'Pattaya', sans-serif;">Chấp nhận</p>
+                margin-top: 85px;font-family: 'Pattaya', sans-serif;">&nbsp;</p>
             <div class="heartCa"></div>
         </div>
         <script type="text/javascript">
