@@ -23,17 +23,23 @@
         </script>
     </head>
     <body class="body">
-        <audio autoplay controls id="bgMusic">
-            <source src="https://levulinh.github.io/kun-project/bg_music.mp3" type="audio/mpeg" />
-            
-        </audio>
-        <p id="demo"></p>
-        <script>
-            function myFunction() {
-              var x = document.getElementById("bgMusic").autoplay;
-              document.getElementById("demo").innerHTML = x;
-            }
-            </script>
+        <audio id="myAudio" controls autoplay>
+            <source src="https://levulinh.github.io/kun-project/bg_music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          
+          <p>Click the button to find out if the audio automatically started to play as soon as it was ready.</p>
+          
+          <button onclick="myFunction()">Try it</button>
+          
+          <p id="demo"></p>
+          
+          <script>
+          function myFunction() {
+            var x = document.getElementById("myAudio").autoplay;
+            document.getElementById("demo").innerHTML = x;
+          }
+          </script>
         <div class="phu"></div>
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation" data-anijs="if: mouseover, do: bounceIn animated" style="background-color: #f99ec7 !important;box-shadow: 0 0 2px 0 #acacac;">
             <img class="pull-left" style="display: inline-block !important;margin: 10px 40px 30px 30px" title="">
