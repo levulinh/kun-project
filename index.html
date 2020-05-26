@@ -21,16 +21,16 @@
                 s.parentNode.insertBefore(hm, s);
             })();
         </script>
+        <script>
+            window.onload = function() {
+              var context = new AudioContext();
+            }
+            </script>
     </head>
     <body class="body">
-        <audio id="player" loop>
-            <source src="https://levulinh.github.io/kun-project/bg_music.mp3" type="audio/mp3">
-        </audio>
-
-        <script>
-            var start = confirm("Em đã sẵn sàng chưa?");
-            document.getElementById("player").play();
-        </script>
+        <audio autoplay>
+            <source src="https://levulinh.github.io/kun-project/bg_music.mp3">
+      </audio>
 
         <div class="phu"></div>
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation" data-anijs="if: mouseover, do: bounceIn animated" style="background-color: #f99ec7 !important;box-shadow: 0 0 2px 0 #acacac;">
